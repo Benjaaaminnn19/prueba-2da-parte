@@ -30,8 +30,19 @@
                 <label for="dob" class="form-label">Fecha de nacimiento</label>
                 <input type="date" class="form-control" id="dob" required>
             </div>
+            
             <button type="submit" class="btn btn-primary">Registrar</button>
-        </form>
-    </section>
+            </form>
+            </section>
+
+            <script>    
+                const form = document.querySelector('form');
+
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    alert('¡Te has registrado correctamente!');
+                    form.reset();
+                });
+            </script>
 </body>
 </html>
